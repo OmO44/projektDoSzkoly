@@ -37,14 +37,14 @@ cursor: pointer;
 margin:10px ;
 }
 
-form .display{
+form.display{
     display: flex;
     justify-content:flex-end ;
     margin: 20px 0;
 
 }
 /*okno kalkulatora*/
-form .display input{
+form.display input{
 text-align: right;
 flex: 1;
 font-size: 45px;
