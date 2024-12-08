@@ -1,0 +1,38 @@
+/* Ustawienie stylów dla całej strony */
+
+body {
+    font-family: Arial, sans-serif; /* Zmieniamy czcionkę na Arial */
+    background-color: #f0f0f0; /* Tło strony na jasnoszare */
+    color: #333; /* Kolor tekstu na ciemnoszary */
+    margin: 0; /* Usuwamy domyślne marginesy */
+    padding: 0; /* Usuwamy domyślne wypełnienie */
+}
+
+/* Styl dla nagłówka */
+
+h1 {
+    color: #0044cc; /* Kolor tekstu nagłówka na niebieski */
+    text-align: center; /* Wyrównanie tekstu nagłówka do środka */
+}
+
+/* Styl dla akapitów */
+
+p {
+    font-size: 16px; /* Ustawiamy rozmiar czcionki na 16px */
+    line-height: 1.5; /* Wysokość linii na 1.5, co poprawia czytelność */
+    margin-bottom: 20px; /* Margines dolny dla odstępu między akapitami */
+}
+
+/* Lista */
+
+ul {
+    list-style-type: square; /* Ustawiamy kwadratowe punkty listy */
+    padding-left: 20px; /* Dodajemy wypełnienie po lewej stronie listy */
+}
+
+footer {
+    background-color: #333; /* Kolor tła stopki na ciemnoszary */
+    color: white; /* Kolor tekstu stopki na biały */
+    text-align: center; /* Wyrównanie tekstu do środka */
+    padding: 20px; /* Wypełnienie wokół tekstu w stopce */
+}
