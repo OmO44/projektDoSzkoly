@@ -1,0 +1,308 @@
+/* Resetowanie domyślnych stylów przeglądarki */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Stylowanie całego dokumentu */
+body {
+    font-family: 'Roboto', sans-serif; /* Ustawienie domyślnej czcionki */
+    background-color: #f4f4f9; /* Jasne tło strony */
+    color: #333; /* Kolor tekstu */
+    line-height: 1.6; /* Ustawienie wysokości linii */
+    padding: 20px; /* Odstęp od krawędzi ekranu */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Płynne przejście przy zmianie motywu */
+}
+
+/* Stylowanie nagłówka */
+header {
+    background-color: #333; /* Ciemne tło nagłówka */
+    color: white; /* Biały tekst */
+    padding: 20px; /* Wewnętrzne marginesy */
+}
+
+/* Stylowanie menu nawigacyjnego */
+nav ul {
+    list-style: none; /* Usunięcie punktów z listy */
+    display: flex; /* Wyświetlanie elementów w wierszu */
+    justify-content: center; /* Centrowanie elementów */
+}
+
+nav ul li {
+    margin: 0 15px; /* Odstępy pomiędzy elementami */
+}
+
+nav ul li a {
+    text-decoration: none; /* Usunięcie podkreślenia */
+    color: white; /* Biały kolor tekstu */
+    font-weight: bold; /* Pogrubiony tekst */
+    transition: color 0.3s ease; /* Płynne przejście przy zmianie koloru */
+}
+
+nav ul li a:hover {
+    color: #f4f4f9; /* Zmiana koloru przy najechaniu */
+}
+
+/* Stylowanie sekcji głównej */
+main {
+    margin-top: 40px;
+    padding: 20px;
+    background-color: #fff; /* Białe tło sekcji */
+    border-radius: 8px; /* Zaokrąglenie rogów */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Delikatny cień */
+}
+
+/* Sekcja wprowadzenia */
+section#home {
+    text-align: center; /* Wyśrodkowanie tekstu */
+    padding: 40px 0;
+}
+
+section#home h1 {
+    font-size: 2.5em; /* Duży nagłówek */
+    color: #333; /* Kolor nagłówka */
+}
+
+section#home p {
+    font-size: 1.2em; /* Większy tekst dla paragrafu */
+    color: #555; /* Mniej intensywny kolor tekstu */
+    margin-top: 20px;
+}
+
+section#home button {
+    padding: 10px 20px; /* Wewnętrzne marginesy */
+    background-color: #333; /* Ciemne tło przycisku */
+    color: white; /* Biały tekst */
+    border: none; /* Brak obramowania */
+    border-radius: 5px; /* Zaokrąglenie rogów */
+    font-size: 1.1em; /* Większa czcionka przycisku */
+    cursor: pointer; /* Wskaźnik zmienia się na rękę */
+    transition: background-color 0.3s ease; /* Płynne przejście przy zmianie tła */
+}
+
+section#home button:hover {
+    background-color: #555; /* Zmiana koloru przycisku przy najechaniu */
+}
+
+/* Stylowanie sekcji "O nas" */
+section#about {
+    background-color: #f4f4f9; /* Tło w jasnym kolorze */
+    padding: 40px 0;
+    text-align: center; /* Wyśrodkowanie tekstu */
+}
+
+section#about h2 {
+    font-size: 2em; /* Duży nagłówek */
+    color: #333;
+}
+
+section#about p {
+    font-size: 1.1em;
+    color: #555;
+    margin-top: 20px;
+    line-height: 1.8;
+}
+
+/* Stylowanie sekcji usług */
+section#services {
+    padding: 40px 0;
+    text-align: center;
+}
+
+section#services h2 {
+    font-size: 2.5em;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+section#services ul {
+    display: flex; /* Wyświetlanie usług w wierszu */
+    justify-content: space-around;
+    flex-wrap: wrap; /* Przełamanie linii na mniejsze ekrany */
+}
+
+section#services li {
+    width: 30%;
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease; /* Płynna animacja podczas najechania */
+}
+
+section#services li:hover {
+    transform: scale(1.05); /* Powiększenie przy najechaniu */
+}
+
+section#services h3 {
+    font-size: 1.8em;
+    color: #333;
+}
+
+section#services p {
+    font-size: 1em;
+    color: #555;
+}
+
+/* Stylowanie sekcji kontaktowej */
+section#contact {
+    background-color: #f4f4f9;
+    padding: 40px 0;
+    text-align: center;
+}
+
+section#contact h2 {
+    font-size: 2.5em;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+section#contact form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+section#contact label {
+    font-size: 1.1em;
+    color: #333;
+    margin-bottom: 5px;
+    align-self: flex-start;
+}
+
+section#contact input,
+section#contact textarea {
+    width: 60%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1.1em;
+}
+
+section#contact button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+section#contact button:hover {
+    background-color: #555;
+}
+
+/* Stylowanie sekcji mapy */
+section#map {
+    padding: 40px 0;
+    text-align: center;
+}
+
+section#map iframe {
+    border: 0;
+    width: 80%;
+    height: 400px;
+    margin-top: 20px;
+}
+
+/* Stylowanie stopki */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+footer ul li {
+    margin: 0 10px;
+}
+
+footer ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+    transition: color 0.3s ease;
+}
+
+footer ul li a:hover {
+    color: #f4f4f9;
+}
+
+/* Stylowanie przycisku przewijania do góry */
+#scrollTopButton {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    padding: 15px;
+    font-size: 1.5em;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease;
+}
+
+#scrollTopButton:hover {
+    background-color: #555;
+}
+
+/* Stylowanie ciemnego motywu */
+body.dark {
+    background-color: #2e2e2e; /* Ciemne tło strony */
+    color: #f4f4f9; /* Jasny tekst */
+}
+
+body.dark header {
+    background-color: #222; /* Ciemniejsze tło nagłówka */
+}
+
+body.dark nav ul li a {
+    color: #f4f4f9; /* Jasne linki w menu */
+}
+
+body.dark section#home {
+    background-color: #444; /* Ciemniejsze tło sekcji */
+}
+
+body.dark section#about {
+    background-color: #333; /* Ciemniejsze tło sekcji */
+}
+
+body.dark footer {
+    background-color: #222; /* Ciemniejsza stopka */
+}
+
+body.dark section#contact form input,
+body.dark section#contact form textarea {
+    border: 1px solid #444; /* Ciemniejsze obramowanie formularza */
+}
+
+/* Stylowanie animacji przycisku */
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+button:active {
+    animation: pulse 0.3s ease-in-out; /* Dodanie efektu pulsowania przy kliknięciu */
+}

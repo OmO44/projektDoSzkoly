@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <!-- Tytuł strony -->
+      <title>Test dijit programmatic layout</title>
+
+      <!-- Ustawienie kodowania znaków na UTF-8 -->
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+
+      <!-- Importowanie arkuszy stylów Dojo, Dijit i Dgrid -->
+      <style type="text/css">
+         @import "dojo/resources/dojo.css";  /* Styl Dojo */
+         @import "dijit/themes/claro/document.css"; /* Styl dla motywu Claro */
+         @import "dijit/themes/claro/claro.css"; /* Styl dla motywu Claro */
+         @import "dgrid/css/dgrid.css";  /* Styl dla dgrid */
+         @import "dgrid/css/skins/claro.css"; /* Styl skóry dla dgrid */
+         
+         /* Styl dla całej strony */
+         html, body {
+            padding: 0;
+            margin: 0;
+            width: 100%;
+            height: 100%;
+            overflow:hidden; /* Ukrywa pasek przewijania */
+         }
+
+         /* Styl dla kontenera dgrid, który zajmuje całą wysokość */
+         .dijitBorderContainer .dgrid {
+            height: 100%;
+         }
+      </style>
+
+      <!-- Konfiguracja Dojo -->
+      <script type="text/javascript">
+         var dojoConfig = {
+            async : true,   /* Asynchroniczne ładowanie Dojo */
+            parseOnLoad : true  /* Parowanie po załadowaniu */
+         }
+      </script>
+
+      <!-- Ładowanie głównego skryptu Dojo -->
+      <script type="text/javascript" src="dojo/dojo.js"></script>
+
+      <script type="text/javascript">
+         /* Wykorzystanie funkcji require() do ładowania modułów Dojo */
+         require(["dojo/ready", "dojo/parser", "dojo/dom-construct", "test/TopBC"], function(ready, parser, domConstruct, BC){
+            ready(function(){
+               /* Tworzenie instancji widgetu TopBC i przypisanie go do kontenera "bc" */
+               var pBC = new BC({}, "bc");
+               pBC.startup();  /* Inicjacja widgetu */
+            });
+         });
+      </script>
+   </head>
+
+   <body class="claro">
+      <!-- Kontener, w którym pojawi się widget TopBC -->
+      <div id="bc"></div>
+   </body>
+</html>
